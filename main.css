@@ -1,0 +1,138 @@
+/* MAIN */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  background-color: #d6e1ff;
+}
+.box {
+  display: grid;
+  margin: 100px auto;
+  width: 350px;
+  grid-template-rows: 150px 160px 100px 130px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.box .image-box {
+  background-image: url(/images/illustration-hero.svg);
+  background-position: center;
+  background-size: contain;
+  border-radius: 10px 10px 0 0;
+}
+
+.box .text-box {
+  text-align: center;
+}
+
+.box .text-box h2 {
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.box .text-box p {
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+
+.box .plan-box {
+  display: flex;
+  width: 80%;
+  background-color: var(--Very-pale-blue);
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.box .plan-box .music {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.box .plan-box ul {
+}
+
+.box .plan-box ul li {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.box .plan-box ul .annual {
+  font-weight: 600;
+}
+
+.box .plan-box ul .price {
+  color: var(--Desaturated-blue);
+  font-weight: lighter;
+}
+
+.box .plan-box a {
+  font-size: 14px;
+}
+
+.box .plan-box a:hover {
+  text-decoration: none;
+  color: var(--Dark-blue);
+  font-size: 14px;
+}
+
+.payment-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-box .btn-payment {
+  width: 80%;
+  border: 1px solid var(--Very-pale-blue);
+  color: white;
+  background-color: var(--Bright-blue);
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px hsl(225deg 100% 95%);
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+.payment-box .btn-payment:hover {
+  background-color: var(--Dark-blue);
+
+  box-shadow: 10px 10px 10px hsl(0deg 0% 84%);
+}
+
+.payment-box a {
+  text-decoration: none;
+  color: var(--Dark-blue);
+}
+
+.payment-box a:hover {
+  color: var(--Bright-blue);
+}
